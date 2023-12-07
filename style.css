@@ -1,0 +1,471 @@
+/* CSS Document */
+
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+button, summary {
+	cursor: pointer;
+}
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+
+
+
+/* Light mode */
+:root {
+	--body-bg: #FFFFFF;
+	--background-section: #ebebf0;
+  --header-color: #000000;
+	--text-color: #000000;
+	--border-color: #000000;
+	--link-color: #0d1ce0;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+	:root {
+			--body-bg: #000000;
+			--background-section: #0d0d0c;
+			--header-color: #FFFFFF;
+			--text-color: #FFFFFF;
+			--border-color: #FFFFFF;
+			--link-color: #f5e642;
+	}
+}
+
+
+  
+  body {
+    margin: 0;
+    background-color: var(--body-bg);
+    font-size: 1em;
+    scroll-behavior: smooth;
+    font-family: 'Quicksand', sans-serif;
+    max-width: 100%;
+  }
+  
+  h1 {
+    margin-top: 3em;
+    margin-bottom: 2em;
+    font-size: 5em;
+    color: var(--header-color);
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 3em;
+    margin-top: 1em;
+    font-weight: normal;
+    margin-bottom: .4em;
+    text-align: center;
+    justify-content: center; 
+    display: block;
+    text-align: center;
+    color: var(--header-color);
+  
+  }
+  
+  h3 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: var(--header-color);
+    padding-top: 2em;
+  }
+  
+  main p {
+    margin-left: 10%;
+    margin-right: 10%;
+    color: var(--text-color);
+    text-align: center;
+    background-color: var(--background-section);
+    padding: 1em;
+    border: var(--border-color) solid 2px;
+  }
+  
+  .linkgithub a {
+    color: var(--link-color);
+    text-decoration: none;
+    outline-style: none;
+    justify-content: center;
+    display: inline-block;
+    background-color: var(--background-section);
+    margin: 2em;
+    border: 2px solid var(--border-color);
+    padding: .5em;
+  }
+  
+  .linkgithub {
+    text-align: center;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  
+  
+  /* header */
+  
+  header nav ul {
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  header nav ul li a {
+    color: var(--link-color);
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  
+  header a {
+    border-bottom: none;
+    display: block;
+  }
+  
+  header {
+    background-image: url("../Portfolio1/images/bannerportfolio.png");
+    padding: 1em;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover
+  }
+  
+  header p{
+    color: var(--text-color);
+  }
+  
+  .banner {
+    text-align: center;
+    width: 100%; 
+  }
+  
+  
+  
+  
+  /* main */
+  
+  main img {
+    width: 100%;
+  
+  }
+  
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-right: 10%;
+    margin-left: 10%;
+    border: var(--border-color) solid 2px;
+    margin-bottom: 2em;
+    background-color: var(--border-color);
+  }
+
+  .skillsbackend {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding: 1em;
+    margin-right: 10%;
+    margin-left: 10%;
+    border: var(--border-color) solid 2px;
+    margin-bottom: 2em;
+    background-color: var(--text-color);
+  }
+
+  
+  .frontendcertificaat {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-right: 10%;
+    margin-left: 10%;
+    border: var(--border-color) solid 2px;
+    margin-bottom: 2em;
+  }
+  
+  .skillssectie {
+    background-color: var(--background-section);
+    padding: 1em;
+  }
+  
+  
+  /* stone island */
+  
+  .stoneisland {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    margin-right: 10%;
+    margin-left: 10%;
+    border: var(--border-color) solid 2px;
+    padding: 1em;
+    background-color: var(--body-bg);
+  }
+
+  .stoneisland5 { grid-area: 2 / 2 / 4 / 4; }
+
+
+  /* frontend voor designers */
+  
+  .fvd {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    margin-right: 10%;
+    margin-left: 10%;
+    border: var(--border-color) solid 2px;
+    padding: 1em;
+    background-color: var(--background-section);
+  }
+  
+  
+
+  /* studs */
+  
+  .studs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    margin-right: 10%;
+    margin-left: 10%;
+    border: var(--border-color) solid 2px;
+    align-items: center;
+    padding: 1em;
+    background-color: var(--background-section);
+  }
+  
+  .fvdsectie {
+    background-color: var(--body-bg);
+    padding-bottom: 2em;
+  }
+
+   /* frontend voor designers */
+  
+   .fvdxbox {
+    margin-right: 10%;
+    margin-left: 10%;
+    align-items: center;
+    padding: 1em;
+  }
+  
+  .fvdxboxsectie {
+    background-color: var(--background-section);
+    padding-bottom: 2em;
+  }
+  
+  .fvdxbox video {
+    border: var(--border-color) solid 2px;
+    align-items: center;
+    width: 75%;
+    text-align: center;
+    margin-left: 12.5%;
+    margin-right: 10%;
+  }
+
+   /* Visual Track */
+  
+   .visualtrack {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    margin-right: 10%;
+    margin-left: 10%;
+    border: var(--border-color) solid 2px;
+    align-items: center;
+    padding: 1em;
+    background-color: var(--body-bg);
+  }
+
+  .visualtrackanimatie video {
+    border: var(--border-color) solid 2px;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 10%;
+  }
+
+  
+  /* SRP Frontend */
+  
+  .srpfrontend {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    margin-right: 10%;
+    margin-left: 10%;
+    border: var(--border-color) solid 2px;
+    box-shadow: 5px 5px var(--border-color);
+    padding: 1em;
+    background-color: var(--background-section);
+  }
+  
+  .srpfrontendsectie {
+    background-color: var(--background-section);
+    padding-bottom: 2em;
+  }
+  
+  /* Projectteam 1 */
+  
+  .projectteam1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    margin-right: 10%;
+    margin-left: 10%;
+    border: var(--border-color) solid 2px;
+    box-shadow: 5px 5px var(--border-color);
+    padding: 1em;
+    background-color: var(--background-section);
+  }
+  
+  .projectteam1 img, .vormgeving img, .stoneisland img, .brawl img, .projectweb img, .beyond img, .vormgeving1 img, .dataweek img, .srpfrontend img {
+    border: solid var(--border-color) 1px;
+  }
+  
+  
+  
+  /* Vormgeving */
+  
+  .vormgeving {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    margin-right: 10%;
+    margin-left: 10%;
+    border: var(--border-color) solid 2px;
+    box-shadow: 5px 5px var(--border-color);
+    padding: 1em;
+    background-color: var(--body-bg);
+  }
+  
+  .vormgevingsectie {
+    background-color: var(--body-bg);
+    padding-bottom: 2em;
+  }
+  
+  
+  /* brawl */
+  
+  .brawl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    margin-right: 10%;
+    margin-left: 10%;
+    border: var(--border-color) solid 2px;
+    box-shadow: 5px 5px var(--border-color);
+    padding: 1em;
+    background-color: var(--body-bg);
+  }
+  
+  
+  /* projectweb */
+  
+  .projectweb {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    margin-right: 10%;
+    margin-left: 10%;
+    border: var(--border-color) solid 2px;
+    padding: 1em;
+    background-color: var(--background-section);
+  }
+  
+  .projectwebsectie {
+    background-color: var(--background-section);
+    padding-bottom: 2em;
+  }
+  
+  /* Beyond & Vormgeving */
+  
+  .beyond, .vormgeving1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    margin-right: 10%;
+    margin-left: 10%;
+    border: var(--border-color) solid 2px;
+    padding: 1em;
+    background-color: var(--body-bg);
+  }
+  
+  
+  /* Dataweek */
+  
+  .dataweek {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    margin-right: 10%;
+    margin-left: 10%;
+    border: var(--border-color) solid 2px;
+    padding: 1em;
+    background-color: var(--background-section);
+  }
+  
+  
+  /* footer */
+  
+  h4 {
+    font-size: 2em;
+    text-align: center;
+    color: var(--header-color);
+  }
+  
+  footer p {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 5em;
+    color: var(--text-color);
+  }
+  
+  footer {
+    background-color: var(--background-section);
+    margin-top: 2em;
+    padding: 2em;
+  }
+  
+  footer img {
+    width: 300px;
+    border-radius: 50%;
+    margin: 2em;
+    margin-left: 4em;
+    justify-content: center;
+  }
+  
+  .overmijsectie {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+
+
+  @media screen and (max-width: 1300px) {
+    .srpfrontend {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    .stoneisland {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    .stoneisland5 { grid-area: auto }
+  }
